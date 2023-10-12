@@ -1,0 +1,39 @@
+{ config, pkgs, ... }:
+
+{
+  environment.systemPackages = with pkgs; [
+    vim
+    wget
+    geckodriver
+    firefox
+    nodejs_18
+    yarn
+    awscli2
+    kubectl
+    kubectx
+    vscode
+    pgadmin4
+    whatsapp-for-linux
+    telegram-desktop
+    gparted
+    ventoy
+    docker
+    kubernetes-helm
+    zip
+    unzip
+    brave
+    albert
+    yubioath-flutter
+    slack
+    dbeaver
+    thunderbird
+    openssl
+    vlc
+    terraform
+    terragrunt
+    tfswitch
+    tgswitch
+    gimp
+    joplin-desktop
+  ];
+}
