@@ -22,7 +22,6 @@
     zip
     unzip
     brave
-    albert
     yubioath-flutter
     slack
     dbeaver
@@ -35,5 +34,11 @@
     tgswitch
     gimp
     joplin-desktop
+    woeusb
+    nix-prefetch-git
+    xorg.xmodmap
+    xcape
+    rnix-lsp
+    nil
   ];
 }
