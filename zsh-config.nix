@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   programs.zsh = {
@@ -28,12 +28,14 @@
       update = "sudo nixos-rebuild switch";
       # git
       gcm = "git commit -m";
+      sgit = "sudo git";
       # yarn
       yd = "yarn deploy";
       ydd = "yarn deploy round-five";
 
       ".." = "cd ..";
     };
+    # test
     ohMyZsh = {
       enable = true;
       plugins = [

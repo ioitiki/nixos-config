@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 let tela = pkgs.fetchFromGitHub
   {
