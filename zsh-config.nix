@@ -32,6 +32,7 @@
       # yarn
       yd = "yarn deploy";
       ydd = "yarn deploy round-five";
+      ydp = "yarn deploy release";
 
       ".." = "cd ..";
     };
