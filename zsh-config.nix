@@ -28,6 +28,9 @@
       update = "sudo nixos-rebuild switch";
       # git
       gcm = "git commit -m";
+      # yarn
+      yd = "yarn deploy";
+      ydd = "yarn deploy round-five";
 
       ".." = "cd ..";
     };
