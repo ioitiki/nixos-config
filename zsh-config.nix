@@ -12,8 +12,11 @@
       # open workspaces
       scripts = "code ~/nft/scripts";
       graphql-marketplace = "code ~/nft/nft-marketplace-graphql";
+      graphql-dashboard = "code ~/nft/nft-dashboard-graphql";
       react-marketplace = "code ~/nft/nft-marketplace-react";
       react-dashboard = "code ~/nft/nft-dashboard-react";
+      monorepo = "code ~/nft/monorepo";
+      rail = "code ~/coding/railbird";
       # k8s
       ke = "kubectl exec -it";
       knreact = "kubens $(kubens -c)-react";
@@ -33,6 +36,14 @@
       yd = "yarn deploy";
       ydd = "yarn deploy round-five";
       ydp = "yarn deploy release";
+      # bun
+      b = "bun";
+      bd = "bun run deploy";
+      bunx = "bun x";
+      # poetry
+      p = "poetry";
+      pc = "poetry config";
+      pi = "poetry install";
 
       ".." = "cd ..";
     };

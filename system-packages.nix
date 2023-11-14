@@ -2,6 +2,8 @@
 
 {
   environment.systemPackages = with pkgs; [
+    python311
+    poetry
     vim
     wget
     geckodriver
@@ -40,5 +42,14 @@
     xcape
     rnix-lsp
     nil
+    ngrok
+    node2nix
+    # python311Packages.sqlalchemy
+    # python311Packages.alembic
+    bun
+    # (nodeEnv.buildNodePackage {
+    #   name = "graphql-codegen-cli";
+    #   packageJSON = ./package.json;
+    # })
   ];
 }

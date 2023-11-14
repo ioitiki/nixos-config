@@ -1,0 +1,7 @@
+{
+  "name": "global-node-packages",
+  "dependencies": {
+    "graphql-codegen-cli": "^0.6.0-alpha.62b22f38"
+  }
+}
+  

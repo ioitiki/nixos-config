@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   users.users.andy = {
@@ -8,22 +8,5 @@
     isNormalUser = true;
     description = "Andy";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
-  };
-
-  systemd.user.services.xmodmap-xcape = {
-    description = "Load xmodmap and xcape settings";
-    environment = {
-      DISPLAY = ":0";
-      XAUTHORITY = "/home/andy/.Xauthority";
-    };
-    serviceConfig = {
-      Type = "oneshot";
-      ExecStartPre = "${pkgs.coreutils}/bin/sleep 5";
-      ExecStart = ''
-        ${pkgs.xorg.xmodmap}/bin/xmodmap /home/andy/.config/xmodmap/.Xmodmap
-        ${pkgs.xcape}/bin/xcape -e "Hyper_L=Control_L|Alt_L|Shift_L"
-      '';
-    };
-    wantedBy = [ "default.target" ];
   };
 }
