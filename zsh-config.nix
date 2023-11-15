@@ -38,6 +38,7 @@
       ydp = "yarn deploy release";
       # bun
       b = "bun";
+      bi = "bun install";
       bd = "bun run deploy";
       bunx = "bun x";
       # poetry
