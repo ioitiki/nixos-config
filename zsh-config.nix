@@ -11,6 +11,8 @@
       zshrc = "code ~/.zshrc";
       # open workspaces
       scripts = "code ~/nft/scripts";
+      charts = "code ~/nft/charts";
+      ".ssh" = "code ~/.ssh";
       graphql-marketplace = "code ~/nft/nft-marketplace-graphql";
       graphql-dashboard = "code ~/nft/nft-dashboard-graphql";
       react-marketplace = "code ~/nft/nft-marketplace-react";
@@ -41,6 +43,7 @@
       bi = "bun install";
       bd = "bun run deploy";
       bunx = "bun x";
+      buni = "bun run ./index.ts";
       # poetry
       p = "poetry";
       pc = "poetry config";

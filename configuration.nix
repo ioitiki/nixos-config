@@ -119,14 +119,6 @@ in
     port = 54321;
     package = pkgs.postgresql_13;
     ensureDatabases = [ "dev_db" ];
-    ensureUsers = [
-      {
-        name = "andy";
-        ensurePermissions = {
-          "DATABASE dev_db" = "ALL PRIVILEGES";
-        };
-      }
-    ];
   };
 
   # nixpkgs.config.allowBroken = true;

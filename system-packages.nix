@@ -8,7 +8,7 @@
     wget
     geckodriver
     firefox
-    nodejs_18
+    nodejs_20
     yarn
     awscli2
     kubectl
@@ -27,13 +27,13 @@
     yubioath-flutter
     slack
     dbeaver
-    thunderbird
+    # thunderbird
     openssl
     vlc
-    terraform
-    terragrunt
-    tfswitch
-    tgswitch
+    # terraform
+    # terragrunt
+    # tfswitch
+    # tgswitch
     gimp
     joplin-desktop
     woeusb
@@ -44,9 +44,22 @@
     nil
     ngrok
     node2nix
+    android-studio
+    android-tools
+    obs-studio
+    sqlite
+    libsForQt5.bismuth
+    # mailspring
+    # nodePackages.node-gyp
+    gnumake
+    libgcc
+    # electron
+    ntfs3g
+    clang
     # python311Packages.sqlalchemy
     # python311Packages.alembic
     bun
+    cloc
     # (nodeEnv.buildNodePackage {
     #   name = "graphql-codegen-cli";
     #   packageJSON = ./package.json;
