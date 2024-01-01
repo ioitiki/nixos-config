@@ -13,12 +13,14 @@
       scripts = "code ~/nft/scripts";
       charts = "code ~/nft/charts";
       ".ssh" = "code ~/.ssh";
-      graphql-marketplace = "code ~/nft/nft-marketplace-graphql";
-      graphql-dashboard = "code ~/nft/nft-dashboard-graphql";
-      react-marketplace = "code ~/nft/nft-marketplace-react";
-      react-dashboard = "code ~/nft/nft-dashboard-react";
+      marketplace-graphql = "code ~/nft/nft-marketplace-graphql";
+      marketplace-react = "code ~/nft/nft-marketplace-react";
+      dashboard-graphql = "code ~/nft/nft-dashboard-graphql";
+      dashboard-react = "code ~/nft/nft-dashboard-react";
       monorepo = "code ~/nft/monorepo";
       rail = "code ~/coding/railbird";
+      verified-fans-graphql = "code ~/verified-fans/verified-fans-graphql";
+      verified-fans-react = "code ~/verified-fans/verified-fans-react";
       # k8s
       ke = "kubectl exec -it";
       knreact = "kubens $(kubens -c)-react";
