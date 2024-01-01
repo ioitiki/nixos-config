@@ -6,9 +6,10 @@
 
 let
   bunOverlay = import ./bun-overlay.nix;
+  mailspringOverlay = import ./mailspring-overlay.nix;
 in
 {
-  nixpkgs.overlays = [ bunOverlay ];
+  nixpkgs.overlays = [ bunOverlay mailspringOverlay ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 

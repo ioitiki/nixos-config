@@ -49,7 +49,7 @@
     obs-studio
     sqlite
     libsForQt5.bismuth
-    # mailspring
+    mailspring
     # nodePackages.node-gyp
     gnumake
     libgcc
