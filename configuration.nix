@@ -6,12 +6,13 @@
 
 let
   bunOverlay = import ./bun-overlay.nix;
-  mailspringOverlay = import ./mailspring-overlay.nix;
+  unstableOverlay = import ./unstable-overlay.nix;
 in
 {
-  nixpkgs.overlays = [ bunOverlay mailspringOverlay ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  
+  nixpkgs.overlays = [ bunOverlay unstableOverlay ];
 
   nix.extraOptions = ''
     experimental-features = nix-command flakes
@@ -29,6 +30,10 @@ in
     ];
 
   networking.hostName = "nixos"; # Define your hostname.
+
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-25.9.0"
+  ];
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -139,6 +144,12 @@ in
     settings.KbdInteractiveAuthentication = false;
     settings.PermitRootLogin = "yes";
   };
+
+  # fileSystems."/nix" = {
+  #   device = "/dev/disk/by-uuid/fe2d27f8-f0a7-4360-9dcc-1f0cdd147d29";
+  #   fsType = "ext4";
+  #   neededForBoot = true;
+  # };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

@@ -7,4 +7,7 @@ in
 {
   # Override the mailspring package
   mailspring = nixos-24_05.mailspring;
+  # vscode = nixos-24_05.vscode;
+  # yarn = nixos-24_05.yarn;
+  # morgen = nixos-24_05.morgen;
 }

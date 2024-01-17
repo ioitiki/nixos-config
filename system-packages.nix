@@ -2,21 +2,20 @@
 
 {
   environment.systemPackages = with pkgs; [
+    beekeeper-studio
     python311
     poetry
     vim
     wget
     geckodriver
     firefox
-    nodejs_20
+    nodejs_18
     yarn
     awscli2
     kubectl
     kubectx
     vscode
     pgadmin4
-    whatsapp-for-linux
-    telegram-desktop
     gparted
     ventoy
     docker
@@ -26,7 +25,7 @@
     brave
     yubioath-flutter
     slack
-    dbeaver
+    # dbeaver
     # thunderbird
     openssl
     vlc
@@ -34,7 +33,9 @@
     # terragrunt
     # tfswitch
     # tgswitch
+    chromium
     gimp
+    morgen
     joplin-desktop
     woeusb
     nix-prefetch-git
@@ -48,21 +49,14 @@
     android-tools
     obs-studio
     sqlite
-    libsForQt5.bismuth
     mailspring
-    # nodePackages.node-gyp
-    gnumake
-    libgcc
-    # electron
+    # gnumake
+    # libgcc
     ntfs3g
     clang
-    # python311Packages.sqlalchemy
-    # python311Packages.alembic
+    # nodePackages.node-gyp
     bun
     cloc
-    # (nodeEnv.buildNodePackage {
-    #   name = "graphql-codegen-cli";
-    #   packageJSON = ./package.json;
-    # })
+    # gnome.cheese
   ];
 }

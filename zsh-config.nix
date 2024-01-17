@@ -15,6 +15,7 @@
       ".ssh" = "code ~/.ssh";
       marketplace-graphql = "code ~/nft/nft-marketplace-graphql";
       marketplace-react = "code ~/nft/nft-marketplace-react";
+      marketplace-docs = "code ~/nft/nft-marketplace-docs";
       dashboard-graphql = "code ~/nft/nft-dashboard-graphql";
       dashboard-react = "code ~/nft/nft-dashboard-react";
       monorepo = "code ~/nft/monorepo";
@@ -34,6 +35,7 @@
       config = "code /etc/nixos";
       update = "sudo nixos-rebuild switch";
       # git
+      icm = "git add -A && git commit -m 'ic' && git push origin main";
       gcm = "git commit -m";
       sgit = "sudo git";
       # yarn
@@ -46,6 +48,7 @@
       bd = "bun run deploy";
       bunx = "bun x";
       buni = "bun run ./index.ts";
+      bun-update = "sudo bash ~/.config/bun/update.sh";
       # poetry
       p = "poetry";
       pc = "poetry config";
